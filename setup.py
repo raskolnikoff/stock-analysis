@@ -1,6 +1,6 @@
-from distutils.core import setup
+import distutils.core
 
-setup(
+distutils.core.setup(
     name='stock_analysis',
     version='0.2',
     description='Classes for technical analysis of stocks.',
@@ -9,7 +9,7 @@ setup(
     license='MIT',
     url='https://github.com/stefmolin/stock-analysis',
     packages=['stock_analysis'],
-    install_requires=[
+    install_requires={
         'matplotlib>=3.0.2',
         'numpy>=1.15.2',
         'pandas>=0.23.4',
@@ -17,5 +17,5 @@ setup(
         'seaborn>=0.11.0',
         'statsmodels>=0.11.1',
         'mplfinance>=0.12.7a4'
-    ],
+    },
 )
